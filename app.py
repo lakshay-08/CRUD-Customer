@@ -3,10 +3,11 @@ from flask_cors import CORS
 import logging
 
 # Logger Configuration
-# logging.basicConfig(filename='logs/app.log', format='%(asctime)s - %(levelname)s - %(message)s',
-#                     datefmt='%m-%d-%Y '
-#                             '%I:%M:%S %p %Z',
-#                     level=logging.INFO)
+logging.basicConfig(filename='C:/Users/Lakshay/Desktop/CRUD-Customer/logs/app.log', format='%(asctime)s - %('
+                                                                                           'levelname)s - %(message)s',
+                    datefmt='%m-%d-%Y '
+                            '%I:%M:%S %p %Z',
+                    level=logging.INFO)
 
 
 app = Flask(__name__)

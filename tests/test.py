@@ -1,13 +1,14 @@
 try:
     from app import app
     import unittest
+    import logging
 except Exception as e:
     print("Some packages are missing :", e)
 
 
 class FlaskTest(unittest.TestCase):
 
-    def test_index(self):
+    def test_healthcheck(self):
         tester = app.test_client(self)
         response = tester.get("/healthcheck")
         status_code = response.status_code
