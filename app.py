@@ -28,7 +28,7 @@ logging.basicConfig(filename=logging_filepath, format='%(asctime)s - %('
 
 app = Flask(__name__)
 CORS(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost:5432/postgres'
+app.config['SQLALCHEMY_DATABASE_URI'] = database_uri
 db.init_app(app)
 
 
@@ -110,4 +110,4 @@ def delete_customer_by_id(customer_id):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0', port=82)
+    app.run(debug=True, host='0.0.0.0', port=app_port)
