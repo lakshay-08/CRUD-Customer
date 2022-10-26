@@ -1,6 +1,10 @@
-10-01-2022 04:20:15 PM India Standard Time - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+10-26-2022 09:23:34 AM India Standard Time - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on all addresses (0.0.0.0)
  * Running on http://127.0.0.1:82
  * Running on http://192.168.0.185:82
-10-01-2022 04:20:15 PM India Standard Time - INFO - [33mPress CTRL+C to quit[0m
-10-01-2022 04:20:49 PM India Standard Time - INFO - 127.0.0.1 - - [01/Oct/2022 16:20:49] "GET /healthcheck HTTP/1.1" 200 -
+10-26-2022 09:23:34 AM India Standard Time - INFO - [33mPress CTRL+C to quit[0m
+10-26-2022 09:23:34 AM India Standard Time - INFO -  * Restarting with stat
+10-26-2022 09:23:36 AM India Standard Time - WARNING -  * Debugger is active!
+10-26-2022 09:23:36 AM India Standard Time - INFO -  * Debugger PIN: 234-728-640
+10-26-2022 09:24:40 AM India Standard Time - INFO - 127.0.0.1 - - [26/Oct/2022 09:24:40] "[31m[1mGET /customers/1 HTTP/1.1[0m" 401 -
+10-26-2022 09:25:26 AM India Standard Time - INFO - 127.0.0.1 - - [26/Oct/2022 09:25:26] "GET /customers/1 HTTP/1.1" 200 -
