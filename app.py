@@ -13,7 +13,7 @@ except Exception as e:
 # Ignore all warnings
 warnings.filterwarnings("ignore")
 
-# Load varibles from environment file
+# Load variables from environment file
 load_dotenv()
 logging_filepath = str(os.getenv('APP_LOG_FILEPATH'))
 database_uri = str(os.getenv('SQLALCHEMY_DATABASE_URI'))
@@ -103,6 +103,7 @@ def update_customer(customer_id):
 
 
 @app.route('/customers/<customer_id>', methods=['DELETE'])
+@requires_auth
 def delete_customer_by_id(customer_id):
     db.session.query(Customer).filter_by(customer_id=customer_id).delete()
     db.session.commit()
